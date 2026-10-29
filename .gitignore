@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Data that may not be republished (created by code/01_download.py and code/02_build_panel.py)
+data/raw/prices/
+data/clean/

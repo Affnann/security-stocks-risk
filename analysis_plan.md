@@ -60,4 +60,21 @@ running several tests means one of them may look significant by chance. The proj
 of them, not only the ones that look interesting.
 
 ## Changes after writing
-None yet.
+All of these were made on October 29, 2026, after checking which price series were available
+and before any return or result was computed.
+- Price source: Stooq refused downloads from the computer used for this project, so prices come
+  from Yahoo Finance (through the yfinance package) instead. Neither site allows its data to be
+  republished, so the repository has the download script, not the price files.
+- Prices: month-end closing prices adjusted for splits but not for dividends, for companies and
+  indices alike, so both sides of the abnormal return are price returns.
+- Japan: Yahoo Finance has no TOPIX history, so the Japanese companies are compared with the
+  Nikkei 225 instead.
+- Sweden: Yahoo Finance has OMX Stockholm 30 only from November 2008, so Securitas enters the
+  sample in December 2008 (Loomis was listed in December 2008 anyway).
+- G4S: Yahoo Finance has no history for it, so it is left out.
+- Sohgo Security (ALSOK) has prices from October 2002.
+- Two months are dropped because a spin-off cut the share price mechanically (shareholders
+  received shares in the new company, so the fall is not a loss): Brink's in November 2008
+  (Brink's Home Security distributed October 31, 2008) and Securitas in December 2008 (Loomis
+  distributed, first trading day December 9, 2008). Found while screening the largest monthly
+  moves, before any test was run.

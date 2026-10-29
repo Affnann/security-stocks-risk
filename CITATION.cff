@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "security-stocks-risk: Do security company shares move with geopolitical risk?"
+authors:
+  - family-names: "Azom"
+    given-names: "Kazi Affnann"
+    orcid: "https://orcid.org/0009-0001-5998-7642"
+date-released: "2026-10-29"
+repository-code: "https://github.com/Affnann/security-stocks-risk"
+license: MIT
+keywords:
+  - private security companies
+  - geopolitical risk
+  - stock returns
+  - SECOM
+  - Securitas
